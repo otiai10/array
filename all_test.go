@@ -13,5 +13,5 @@ func TestNew(t *testing.T) {
 func TestArray_Has(t *testing.T) {
 	arr := New("foo", "bar", "buz")
 	Expect(t, arr.Has("foo")).ToBe(true)
-	Expect(t, arr.Has("xxx")).ToBe(true)
+	Expect(t, arr.Has("xxx")).ToBe(false)
 }
